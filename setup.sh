@@ -27,7 +27,7 @@ done
 
 # Vim setup
 echo "Moving old .vim to $olddir"
-mv ~/.vim $olddir
+[ -d "~/.vim" ] && mv ~/.vim $olddir
 cp -r $dir/vim ~/.vim
 
 # echo "Add some useful"
